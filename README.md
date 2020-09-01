@@ -15,7 +15,16 @@ Install Numpy [Using pip](https://packaging.python.org/tutorials/installing-pack
 
 The model, along with its pretrained weights can be found in "model", the training data can be found in "images".
 
+## How training works
+Each image has a corresponding text file that keeps bounding box information that points the relative location of the object to be detected.
+A test and train text file must be created having the official paths for each image, these must be created by you.
+
+Then you must modify the detector.data file found in the models folder to point to these newly created files.
+
+Once this has been done then its time to get pretrained weights and train the provided model with these pretrained weights. HINT: look at the src folder.
+
 ## What to do?
 You must create a script or scripts that takes the provided images, and trains them with the model. There is very minimal programming involved as most of the solution can be done using the provided scripts located in "src".
 
-Read the /src/rundarknet.py comments to undestand what needs to be done.
+Send over your cloned repo to guy.garcia@upr.edu.
+As long as the training process starts and creates a log this is enough for evaluation.

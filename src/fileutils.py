@@ -3,6 +3,12 @@
 import os
 
 def files2list(path, file_extension):
+    """
+    Return a list of found files with that extension from the given path
+
+    :param path: The folder to read from
+    :param file_extension: The type of file to read
+    """
     files=[]
     for file in os.listdir(path):
         if file.endswith(file_extension):
@@ -12,4 +18,4 @@ def files2list(path, file_extension):
 def list2file(file, arr):
     with open(file, 'w') as oFile:
         for item in arr:
-            file.write(f"{item}\n")
+            oFile.write(f"{item}\n")
