@@ -7,7 +7,7 @@ Install [OpenCV](https://www.pyimagesearch.com/2018/08/15/how-to-install-opencv-
 Note: Avoid installing the pip library opencv-python as it has problems with using video.
 
 Install Alexey's [Darknet](https://github.com/AlexeyAB/darknet).
-Note: Read setup instructions as they show different compilations parameters.
+Note: Read setup instructions as they show different compilations parameters. (CPU flags are also present)
 
 Download [Yolov3-tiny cfg and weights](https://pjreddie.com/darknet/yolo/).
 
@@ -24,7 +24,10 @@ Then you must modify the detector.data file found in the models folder to point 
 Once this has been done then its time to get pretrained weights and train the provided model with these pretrained weights. HINT: look at the src folder.
 
 ## What to do?
-You must create a script or scripts that takes the provided images, and trains them with the model. There is very minimal programming involved as most of the solution can be done using the provided scripts located in "src".
+Read over the files in the repo carefully,
+You must create one script that takes care of updating model info and then runs and trains the model.
+
+No prior experience with machine learning is nessesary, you will find that the important parts have already been done, they just need to be placed in the right order.
 
 Send over your cloned repo to guy.garcia@upr.edu.
 As long as the training process starts and creates a log this is enough for evaluation.
