@@ -9,7 +9,7 @@ from fileutils import files2list, list2file
 class TestUtils(unittest.TestCase):
 
     def test_file_reading(self):
-        self.assertEqual(files2list("./src", ".py"), ["cvutils.py", "fileutils.py", "darknetutils.py"], "Must return the files present in the src folder.")
+        self.assertEqual(files2list("./src", ".py"), ["cvutils.py", "darknetutils.py", "fileutils.py"], "Must return the files present in the src folder.")
 
     def test_file_writing(self):
         filearr = files2list("./src", ".py")
